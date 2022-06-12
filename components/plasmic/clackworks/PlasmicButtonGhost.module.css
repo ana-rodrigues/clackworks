@@ -1,0 +1,19 @@
+.root {
+  color: var(--token-m6T18ReYY);
+  font-family: var(--token-27hF1Rg-3);
+  font-size: var(--token-cEZuuWccf);
+  position: relative;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: var(--token-cC9ZiUnEi) 0px var(--token-cC9ZiUnEi)
+    var(--token-cC9ZiUnEi);
+}
+.root:hover:focus {
+  text-decoration-line: underline;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  outline: none;
+  border-bottom: 1px solid var(--token-m6T18ReYY);
+}

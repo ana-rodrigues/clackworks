@@ -1,0 +1,113 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "ggKD3RisT9Ubzud33WNkiG",
+      "projectApiToken": "SpF9ibkkuGn0C5qSca4yfsgzeNdvnRCzq7ZPeYrQF3w3POOS442VzLAdIPvfKzKwsArRFPiJTbCvIl6i8HQ",
+      "projectName": "Clackworks",
+      "version": "latest",
+      "cssFilePath": "plasmic/clackworks/plasmic_clackworks.module.css",
+      "components": [
+        {
+          "id": "u0sNXC5X5Hnc",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackworks/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/clackworks/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "IaDjY5xN7v",
+          "name": "Tab",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackworks/PlasmicTab.jsx",
+          "importSpec": {
+            "modulePath": "Tab.jsx"
+          },
+          "cssFilePath": "plasmic/clackworks/PlasmicTab.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "jQ3WjwLWnw",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackworks/PlasmicNavbar.jsx",
+          "importSpec": {
+            "modulePath": "Navbar.jsx"
+          },
+          "cssFilePath": "plasmic/clackworks/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "k69n-JZyE6",
+          "name": "ButtonGhost",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackworks/PlasmicButtonGhost.jsx",
+          "importSpec": {
+            "modulePath": "ButtonGhost.jsx"
+          },
+          "cssFilePath": "plasmic/clackworks/PlasmicButtonGhost.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [],
+      "images": [
+        {
+          "id": "W2xDoz7T4",
+          "name": "logo.png",
+          "filePath": "../public/plasmic/clackworks/images/logopng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "fWbazDhpHIc_D",
+        "name": "Screen",
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "contextFilePath": "plasmic/clackworks/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.182",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.182/dist/plasmic.schema.json"
+}

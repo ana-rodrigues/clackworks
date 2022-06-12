@@ -1,0 +1,219 @@
+{
+  "props": [
+    {
+      "name": "ACC Blue",
+      "type": "color",
+      "value": "#4594F2",
+      "category": "color",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "yRuKvd8aR"
+      }
+    },
+    {
+      "name": "ACC Green",
+      "type": "color",
+      "value": "#42D786",
+      "category": "color",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "OAp8-ObWc"
+      }
+    },
+    {
+      "name": "ACC Pink",
+      "type": "color",
+      "value": "#D766DA",
+      "category": "color",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "HwomTPrxB"
+      }
+    },
+    {
+      "name": "BK 000 Pure White",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "m6T18ReYY"
+      }
+    },
+    {
+      "name": "BK 1000 Pitch Black",
+      "type": "color",
+      "value": "#131316",
+      "category": "color",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "lKJzSpnpR"
+      }
+    },
+    {
+      "name": "Body",
+      "type": "lineheight",
+      "value": "140%",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "oybP_xLay"
+      }
+    },
+    {
+      "name": "Heading",
+      "type": "lineheight",
+      "value": "110%",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "POa7fIbwH"
+      }
+    },
+    {
+      "name": "L",
+      "type": "fontsize",
+      "value": "24px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "i8uXO4WUf"
+      }
+    },
+    {
+      "name": "Labels",
+      "type": "lineheight",
+      "value": "100%",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "jD61f0dfP"
+      }
+    },
+    {
+      "name": "M",
+      "type": "fontsize",
+      "value": "14px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "cEZuuWccf"
+      }
+    },
+    {
+      "name": "Monospace",
+      "type": "fontfamily",
+      "value": "IBM Plex Mono",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "GZcn0Qi5a"
+      }
+    },
+    {
+      "name": "S",
+      "type": "fontsize",
+      "value": "12px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "0PjLlNJGV"
+      }
+    },
+    {
+      "name": "Sans Serif",
+      "type": "fontfamily",
+      "value": "Uncut Sans",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "27hF1Rg-3"
+      }
+    },
+    {
+      "name": "Spacing L",
+      "type": "spacing",
+      "value": "24px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "14ZACRAey"
+      }
+    },
+    {
+      "name": "Spacing M",
+      "type": "spacing",
+      "value": "16px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "cC9ZiUnEi"
+      }
+    },
+    {
+      "name": "Spacing S",
+      "type": "spacing",
+      "value": "8px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "QQENFYW4b"
+      }
+    },
+    {
+      "name": "Spacing XL",
+      "type": "spacing",
+      "value": "48px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "zRQjz2Otc"
+      }
+    },
+    {
+      "name": "Spacing XS",
+      "type": "spacing",
+      "value": "4px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "PrjspTxQ9"
+      }
+    },
+    {
+      "name": "Spacing XXL",
+      "type": "spacing",
+      "value": "96px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "bqYVReuLc"
+      }
+    },
+    {
+      "name": "Spacing XXS",
+      "type": "spacing",
+      "value": "2px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "IOlAtZ9QC"
+      }
+    },
+    {
+      "name": "XL",
+      "type": "fontsize",
+      "value": "48px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "1576dddvS"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
