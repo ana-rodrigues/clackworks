@@ -1,16 +1,22 @@
 .container {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
   align-items: center;
   justify-content: space-between;
   background: var(--token-lKJzSpnpR);
-  padding-bottom: var(--token-QQENFYW4b);
-  padding-top: var(--token-QQENFYW4b);
   max-width: 100%;
-  min-width: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: var(--token-QQENFYW4b) var(--token-zRQjz2Otc);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    padding-left: var(--token-14ZACRAey);
+    padding-right: var(--token-14ZACRAey);
+  }
 }
 .home {
   position: relative;

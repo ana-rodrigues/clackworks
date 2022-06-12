@@ -21,13 +21,12 @@
   }
 }
 .navbar:global(.__wab_instance) {
-  position: sticky;
-  width: 100%;
+  position: fixed;
   height: auto;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
-  min-width: 0;
+  right: 0;
 }
 .heading {
   display: flex;
@@ -38,10 +37,14 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  margin-top: var(--token-14ZACRAey);
-  margin-bottom: var(--token-14ZACRAey);
   min-width: 0;
   padding: 8px;
+  margin: var(--token-bqYVReuLc) var(--token-GEYkHVTwq) var(--token-zRQjz2Otc);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .heading {
+    margin-bottom: var(--token-14ZACRAey);
+  }
 }
 .h1 {
   color: var(--token-m6T18ReYY);
