@@ -56,7 +56,7 @@ function PlasmicButtonGhost__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"https://www.plasmic.app/"}
+      href={"/"}
       platform={"nextjs"}
       data-plasmic-trigger-props={[
         triggerRootHoverProps,

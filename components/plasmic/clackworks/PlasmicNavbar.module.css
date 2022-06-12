@@ -3,12 +3,13 @@
   flex-direction: row;
   position: relative;
   width: 100%;
-  height: 40px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   background: var(--token-lKJzSpnpR);
+  max-width: 100%;
   min-width: 0;
-  padding: var(--token-QQENFYW4b);
+  padding: var(--token-QQENFYW4b) var(--token-14ZACRAey);
 }
 .img {
   position: relative;
@@ -28,6 +29,6 @@
     height: 16px;
   }
 }
-.buttonGhost:global(.__wab_instance) {
+.linkItem:global(.__wab_instance) {
   position: relative;
 }

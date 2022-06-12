@@ -46,14 +46,14 @@
 }
 
 .plasmic_default_styles {
-  --mixin-BabqDvAMgreF_font-family: "Inter";
+  --mixin-BabqDvAMgreF_font-family: "Uncut Sans";
   --mixin-BabqDvAMgreF_font-size: 16px;
   --mixin-BabqDvAMgreF_font-weight: 400;
   --mixin-BabqDvAMgreF_font-style: normal;
   --mixin-BabqDvAMgreF_color: #535353;
   --mixin-BabqDvAMgreF_text-align: left;
   --mixin-BabqDvAMgreF_text-transform: none;
-  --mixin-BabqDvAMgreF_line-height: 1.5;
+  --mixin-BabqDvAMgreF_line-height: var(--token-oybP_xLay);
   --mixin-BabqDvAMgreF_letter-spacing: normal;
   --mixin-BabqDvAMgreF_white-space: pre-wrap;
   --mixin-BabqDvAMgreF_user-select: text;

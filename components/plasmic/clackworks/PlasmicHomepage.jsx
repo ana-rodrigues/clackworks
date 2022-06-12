@@ -9,7 +9,6 @@
 // Plasmic Project: ggKD3RisT9Ubzud33WNkiG
 // Component: u0sNXC5X5Hnc
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
   classNames,
@@ -41,13 +40,11 @@ function PlasmicHomepage__RenderFunc(props) {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
-          as={"div"}
+        <div
           data-plasmic-name={"layout"}
           data-plasmic-override={overrides.layout}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-          hasGap={true}
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
@@ -62,7 +59,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.navbar}
             className={classNames("__wab_instance", sty.navbar)}
           />
-        </p.Stack>
+        </div>
       </div>
     </React.Fragment>
   );

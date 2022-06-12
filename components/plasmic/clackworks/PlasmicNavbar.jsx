@@ -77,18 +77,18 @@ function PlasmicNavbar__RenderFunc(props) {
       />
 
       <ButtonGhost
-        data-plasmic-name={"buttonGhost"}
-        data-plasmic-override={overrides.buttonGhost}
-        className={classNames("__wab_instance", sty.buttonGhost)}
+        data-plasmic-name={"linkItem"}
+        data-plasmic-override={overrides.linkItem}
+        className={classNames("__wab_instance", sty.linkItem)}
       />
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  container: ["container", "img", "buttonGhost"],
+  container: ["container", "img", "linkItem"],
   img: ["img"],
-  buttonGhost: ["buttonGhost"]
+  linkItem: ["linkItem"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -121,7 +121,7 @@ export const PlasmicNavbar = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    buttonGhost: makeNodeComponent("buttonGhost"),
+    linkItem: makeNodeComponent("linkItem"),
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
     internalArgProps: PlasmicNavbar__ArgProps
