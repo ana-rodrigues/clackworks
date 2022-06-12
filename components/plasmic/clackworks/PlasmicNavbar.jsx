@@ -9,6 +9,7 @@
 // Plasmic Project: ggKD3RisT9Ubzud33WNkiG
 // Component: jQ3WjwLWnw
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -54,27 +55,36 @@ function PlasmicNavbar__RenderFunc(props) {
         sty.container
       )}
     >
-      <p.PlasmicImg
-        data-plasmic-name={"img"}
-        data-plasmic-override={overrides.img}
-        alt={""}
-        className={classNames(sty.img)}
-        displayHeight={
-          hasVariant(globalVariants, "screen", "mobileOnly") ? "16px" : "24px"
-        }
-        displayMaxHeight={"none"}
-        displayMaxWidth={"100%"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={"auto"}
-        loading={"lazy"}
-        src={{
-          src: "/plasmic/clackworks/images/logopng.png",
-          fullWidth: 3088,
-          fullHeight: 372,
-          aspectRatio: undefined
-        }}
-      />
+      <p.PlasmicLink
+        data-plasmic-name={"home"}
+        data-plasmic-override={overrides.home}
+        className={classNames(projectcss.all, projectcss.a, sty.home)}
+        component={Link}
+        href={"/"}
+        platform={"nextjs"}
+      >
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={
+            hasVariant(globalVariants, "screen", "mobileOnly") ? "16px" : "24px"
+          }
+          displayMaxHeight={"none"}
+          displayMaxWidth={"100%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"auto"}
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/clackworks/images/logopng.png",
+            fullWidth: 3088,
+            fullHeight: 372,
+            aspectRatio: undefined
+          }}
+        />
+      </p.PlasmicLink>
 
       <ButtonGhost
         data-plasmic-name={"linkItem"}
@@ -86,7 +96,8 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  container: ["container", "img", "linkItem"],
+  container: ["container", "home", "img", "linkItem"],
+  home: ["home", "img"],
   img: ["img"],
   linkItem: ["linkItem"]
 };
@@ -120,6 +131,7 @@ export const PlasmicNavbar = Object.assign(
   makeNodeComponent("container"),
   {
     // Helper components rendering sub-elements
+    home: makeNodeComponent("home"),
     img: makeNodeComponent("img"),
     linkItem: makeNodeComponent("linkItem"),
     // Metadata about props expected for PlasmicNavbar

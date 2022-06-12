@@ -111,6 +111,16 @@
       }
     },
     {
+      "name": "None",
+      "type": "spacing",
+      "value": "0px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "GEYkHVTwq"
+      }
+    },
+    {
       "name": "S",
       "type": "fontsize",
       "value": "14px",
@@ -203,11 +213,21 @@
     {
       "name": "XL",
       "type": "fontsize",
-      "value": "48px",
+      "value": "32px",
       "category": "fontsize",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
         "id": "1576dddvS"
+      }
+    },
+    {
+      "name": "XXL",
+      "type": "fontsize",
+      "value": "48px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "DDVMvTmf6"
       }
     }
   ],

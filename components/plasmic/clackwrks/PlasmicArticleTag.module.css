@@ -1,0 +1,18 @@
+.tag {
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  background: var(--token-OAp8-ObWc);
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  border-radius: 32px;
+  padding: var(--token-PrjspTxQ9) 12px;
+}
+.slotTargetChildren {
+  color: var(--token-m6T18ReYY);
+  font-family: var(--token-GZcn0Qi5a);
+  font-size: var(--token-0PjLlNJGV);
+  font-weight: 400;
+  text-transform: uppercase;
+}

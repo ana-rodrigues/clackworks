@@ -24,7 +24,7 @@
     {
       "projectId": "ggKD3RisT9Ubzud33WNkiG",
       "projectApiToken": "SpF9ibkkuGn0C5qSca4yfsgzeNdvnRCzq7ZPeYrQF3w3POOS442VzLAdIPvfKzKwsArRFPiJTbCvIl6i8HQ",
-      "projectName": "Clackworks",
+      "projectName": "Clackwrks",
       "version": "latest",
       "cssFilePath": "plasmic/clackworks/plasmic_clackworks.module.css",
       "components": [
@@ -79,6 +79,32 @@
           "cssFilePath": "plasmic/clackworks/PlasmicButtonGhost.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "CWGZEjAICQ",
+          "name": "ArticleCard",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicArticleCard.jsx",
+          "importSpec": {
+            "modulePath": "ArticleCard.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicArticleCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "kPmElHXrXA",
+          "name": "ArticleTag",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicArticleTag.jsx",
+          "importSpec": {
+            "modulePath": "ArticleTag.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicArticleTag.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
@@ -87,6 +113,11 @@
           "id": "W2xDoz7T4",
           "name": "logo.png",
           "filePath": "../public/plasmic/clackworks/images/logopng.png"
+        },
+        {
+          "id": "a8u4g9p24",
+          "name": "Variation=C.png",
+          "filePath": "../public/plasmic/clackwrks/images/variationCpng.png"
         }
       ],
       "indirect": false,
