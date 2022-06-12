@@ -7,9 +7,10 @@
   align-items: center;
   justify-content: space-between;
   background: var(--token-lKJzSpnpR);
+  padding-bottom: var(--token-QQENFYW4b);
+  padding-top: var(--token-QQENFYW4b);
   max-width: 100%;
   min-width: 0;
-  padding: var(--token-QQENFYW4b) var(--token-14ZACRAey);
 }
 .img {
   position: relative;

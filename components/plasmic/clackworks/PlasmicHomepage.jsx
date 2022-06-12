@@ -59,6 +59,33 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.navbar}
             className={classNames("__wab_instance", sty.navbar)}
           />
+
+          <label
+            data-plasmic-name={"label"}
+            data-plasmic-override={overrides.label}
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.label
+            )}
+          >
+            {"Label"}
+          </label>
+
+          <p
+            data-plasmic-name={"p"}
+            data-plasmic-override={overrides.p}
+            className={classNames(
+              projectcss.all,
+              projectcss.p,
+              projectcss.__wab_text,
+              sty.p
+            )}
+          >
+            {
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus lacus ut lacus placerat malesuada. In hac habitasse platea dictumst. Vivamus elementum porta nunc, rutrum ullamcorper tortor sodaDonec rutrum turpis quis nisl interdum, sed consequat metus consectetur. Aenean a nisl id turpis interdum euismod ac quis ipsum. Sed a turpis imperdiet, iaculis nulla sed, viverra massa. Integer elit tortor, eleifend nec nulla non, maximus placerat tellus. Proin dignissim, nibh sit amet venenatis eleifend, arcu tortor pharetra ipsum, sit amet lobortis erat ex non odio. Phasellus pellentesque condimentum sollicitudin. Phasellus iaculis, erat vitae ultricies vehicula, tellus elit posuere ex, commodo aliquam orci erat ut elit. Vestibulum commodo condimentum dui facilisis pellentesque. Suspendisse sit amet est vitae ante luctus blandit. Ut est lorem, varius in augue sed, tempor convallis risus. Quisque nunc nisi, pharetra non mauris sed, tincidunt convallis metus."
+            }
+          </p>
         </div>
       </div>
     </React.Fragment>
@@ -66,8 +93,10 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  layout: ["layout", "navbar"],
-  navbar: ["navbar"]
+  layout: ["layout", "navbar", "label", "p"],
+  navbar: ["navbar"],
+  label: ["label"],
+  p: ["p"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -100,6 +129,8 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
+    label: makeNodeComponent("label"),
+    p: makeNodeComponent("p"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps
