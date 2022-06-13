@@ -77,7 +77,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.h1
               )}
             >
-              {"Keyboards 101"}
+              <p.Trans>{"Keyboards 101"}</p.Trans>
             </h1>
 
             <p
@@ -90,7 +90,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.p
               )}
             >
-              {"Discover resources for begginers into the hobby."}
+              <p.Trans>
+                {"Discover resources for begginers into the hobby."}
+              </p.Trans>
             </p>
           </hgroup>
 
@@ -226,6 +228,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               }
               className={classNames("__wab_instance", sty.articleCard__g4Xka)}
+              title={<p.Trans>{"A guide to keyboard switches"}</p.Trans>}
             />
           </div>
         </div>

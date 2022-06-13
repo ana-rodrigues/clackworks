@@ -76,7 +76,7 @@
   margin-bottom: var(--token-cC9ZiUnEi);
   margin-left: var(--token-GEYkHVTwq);
 }
-.slotTargetSlot {
+.slotTargetTitle {
   color: var(--token-m6T18ReYY);
   font-family: var(--token-27hF1Rg-3);
   font-size: var(--token-1576dddvS);
@@ -84,20 +84,20 @@
   letter-spacing: -1px;
   line-height: var(--token-POa7fIbwH);
 }
-.slotTargetSlot > *,
-.slotTargetSlot > .__wab_slot > *,
-.slotTargetSlot > .__wab_slot > .__wab_slot > *,
-.slotTargetSlot > .__wab_slot > .__wab_slot > .__wab_slot > *,
-.slotTargetSlot > picture > img,
-.slotTargetSlot > .__wab_slot > picture > img,
-.slotTargetSlot > .__wab_slot > .__wab_slot > picture > img,
-.slotTargetSlot > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
+.slotTargetTitle > *,
+.slotTargetTitle > .__wab_slot > *,
+.slotTargetTitle > .__wab_slot > .__wab_slot > *,
+.slotTargetTitle > .__wab_slot > .__wab_slot > .__wab_slot > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > .__wab_slot > picture > img,
+.slotTargetTitle > .__wab_slot > .__wab_slot > picture > img,
+.slotTargetTitle > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
   margin-top: var(--token-GEYkHVTwq) !important;
   width: 100%;
   min-width: 0;
   height: auto;
 }
-.slotTargetSlot2 {
+.slotTargetLead {
   color: var(--token-m6T18ReYY);
   font-family: var(--token-27hF1Rg-3);
   letter-spacing: -0.25px;

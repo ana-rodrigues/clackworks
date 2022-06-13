@@ -25,8 +25,9 @@ export const PlasmicArticleCard__VariantProps = new Array();
 
 export const PlasmicArticleCard__ArgProps = new Array(
   "articleImage",
-  "slot",
-  "slot2"
+  "title",
+  "lead",
+  "articleProp"
 );
 
 export const defaultArticleCard__Args = {};
@@ -38,7 +39,7 @@ function PlasmicArticleCard__RenderFunc(props) {
   const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.Stack
-      as={"div"}
+      as={"article"}
       data-plasmic-name={"articleCard"}
       data-plasmic-override={overrides.articleCard}
       data-plasmic-root={true}
@@ -91,16 +92,22 @@ function PlasmicArticleCard__RenderFunc(props) {
         />
 
         {p.renderPlasmicSlot({
-          defaultContents: "A guide to keyboard switches",
-          value: args.slot,
-          className: classNames(sty.slotTargetSlot)
+          defaultContents: <p.Trans>{"A guide to keyboard switches"}</p.Trans>,
+          value: args.title,
+          className: classNames(sty.slotTargetTitle)
         })}
 
         {p.renderPlasmicSlot({
-          defaultContents:
-            "Not all keyboards are designed the same. Here’s what you need to know as a  non-English writer getting into custom keyboards.",
-          value: args.slot2,
-          className: classNames(sty.slotTargetSlot2)
+          defaultContents: (
+            <p.Trans>
+              {
+                "Not all keyboards are designed the same. Here’s what you need to know as a  non-English writer getting into custom keyboards."
+              }
+            </p.Trans>
+          ),
+
+          value: args.lead,
+          className: classNames(sty.slotTargetLead)
         })}
       </p.Stack>
     </p.Stack>

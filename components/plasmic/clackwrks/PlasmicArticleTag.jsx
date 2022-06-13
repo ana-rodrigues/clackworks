@@ -47,7 +47,7 @@ function PlasmicArticleTag__RenderFunc(props) {
       )}
     >
       {p.renderPlasmicSlot({
-        defaultContents: "LABEL",
+        defaultContents: <p.Trans>{"LABEL"}</p.Trans>,
         value: args.children,
         className: classNames(sty.slotTargetChildren)
       })}

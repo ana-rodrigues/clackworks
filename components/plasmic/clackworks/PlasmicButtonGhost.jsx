@@ -63,7 +63,11 @@ function PlasmicButtonGhost__RenderFunc(props) {
         triggerRootFocusProps
       ]}
     >
-      {triggers.hoverFocus_root ? "Blog" : "Blog"}
+      {triggers.hoverFocus_root ? (
+        <p.Trans>{"Blog"}</p.Trans>
+      ) : (
+        <p.Trans>{"Blog"}</p.Trans>
+      )}
     </p.PlasmicLink>
   );
 }

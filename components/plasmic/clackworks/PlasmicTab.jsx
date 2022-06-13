@@ -9,6 +9,7 @@
 // Plasmic Project: ggKD3RisT9Ubzud33WNkiG
 // Component: IaDjY5xN7v
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
   classNames,
@@ -52,7 +53,7 @@ function PlasmicTab__RenderFunc(props) {
           sty.text___41M5L
         )}
       >
-        {"Builds"}
+        <p.Trans>{"Builds"}</p.Trans>
       </div>
 
       <div
@@ -62,7 +63,7 @@ function PlasmicTab__RenderFunc(props) {
           sty.text__xEhb3
         )}
       >
-        {"Labs"}
+        <p.Trans>{"Labs"}</p.Trans>
       </div>
     </div>
   );
