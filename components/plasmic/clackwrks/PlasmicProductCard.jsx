@@ -139,7 +139,7 @@ function PlasmicProductCard__RenderFunc(props) {
                       sty.text
                     )}
                   >
-                    <p.Trans>{"Buy →"}</p.Trans>
+                    <p.Trans>{"Contact to Buy →"}</p.Trans>
                   </div>
                 ) : null}
               </div>

@@ -27,7 +27,7 @@ import sty from "./PlasmicHome.module.css"; // plasmic-import: QQg6AVsQ0X/css
 
 export const PlasmicHome__VariantProps = new Array();
 
-export const PlasmicHome__ArgProps = new Array();
+export const PlasmicHome__ArgProps = new Array("imageSrc");
 
 export const defaultHome__Args = {};
 
@@ -90,15 +90,16 @@ function PlasmicHome__RenderFunc(props) {
                     data-plasmic-override={overrides.headingLeft}
                     className={classNames(projectcss.all, sty.headingLeft)}
                   >
-                    <div
+                    <h2
                       className={classNames(
                         projectcss.all,
+                        projectcss.h2,
                         projectcss.__wab_text,
-                        sty.text___6Yu7X
+                        sty.h2___6Yu7X
                       )}
                     >
                       <p.Trans>{"All articles"}</p.Trans>
-                    </div>
+                    </h2>
                   </div>
                 ) : null}
 
@@ -186,15 +187,16 @@ function PlasmicHome__RenderFunc(props) {
                   data-plasmic-override={overrides.headingRight}
                   className={classNames(projectcss.all, sty.headingRight)}
                 >
-                  <div
+                  <h2
                     className={classNames(
                       projectcss.all,
+                      projectcss.h2,
                       projectcss.__wab_text,
-                      sty.text__bs4Ia
+                      sty.h2__bs4Ia
                     )}
                   >
                     <p.Trans>{"For sale"}</p.Trans>
-                  </div>
+                  </h2>
                 </div>
               ) : null}
 

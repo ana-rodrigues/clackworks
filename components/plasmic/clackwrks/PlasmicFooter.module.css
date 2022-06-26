@@ -8,7 +8,7 @@
   backdrop-filter: blur(16px);
   min-width: 0;
   -webkit-backdrop-filter: blur(16px);
-  padding: var(--token-14ZACRAey);
+  padding: var(--token-cC9ZiUnEi) var(--token-bqYVReuLc);
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -36,11 +36,12 @@
   object-fit: cover;
 }
 .text {
-  color: var(--token-m6T18ReYY);
+  font-size: var(--token-0PjLlNJGV);
   font-family: var(--token-27hF1Rg-3);
-  letter-spacing: -0.25px;
-  font-weight: 400;
-  font-size: var(--token-cEZuuWccf);
+  color: var(--token-m6T18ReYY);
+  font-weight: 200;
+  line-height: var(--token-oybP_xLay);
+  letter-spacing: -0.5px;
   position: relative;
   width: 100%;
   height: auto;

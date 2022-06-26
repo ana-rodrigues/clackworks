@@ -93,7 +93,7 @@
     {
       "name": "M",
       "type": "fontsize",
-      "value": "16px",
+      "value": "18px",
       "category": "fontsize",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -218,6 +218,16 @@
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
         "id": "1576dddvS"
+      }
+    },
+    {
+      "name": "XS",
+      "type": "fontsize",
+      "value": "12px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "2WImiHVlH"
       }
     },
     {

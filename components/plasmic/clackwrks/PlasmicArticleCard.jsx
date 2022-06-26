@@ -112,11 +112,20 @@ function PlasmicArticleCard__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.productInfoBottom)}
               >
+                <CmsRowField
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cmsEntryField__cXuGs
+                  )}
+                  field={"articleTag"}
+                />
+
                 {(triggers.hover_root ? true : true) ? (
                   <CmsRowField
-                    data-plasmic-name={"cmsEntryField"}
-                    data-plasmic-override={overrides.cmsEntryField}
-                    className={classNames("__wab_instance", sty.cmsEntryField)}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.cmsEntryField__jIxXe
+                    )}
                   />
                 ) : null}
                 {(triggers.hover_root ? true : false) ? (
@@ -150,7 +159,6 @@ const PlasmicDescendants = {
     "img",
     "productInfo",
     "productInfoBottom",
-    "cmsEntryField",
     "text"
   ],
 
@@ -161,16 +169,14 @@ const PlasmicDescendants = {
     "img",
     "productInfo",
     "productInfoBottom",
-    "cmsEntryField",
     "text"
   ],
 
   productTop: ["productTop", "cmsEntryImage", "img"],
   cmsEntryImage: ["cmsEntryImage", "img"],
   img: ["img"],
-  productInfo: ["productInfo", "productInfoBottom", "cmsEntryField", "text"],
-  productInfoBottom: ["productInfoBottom", "cmsEntryField", "text"],
-  cmsEntryField: ["cmsEntryField"],
+  productInfo: ["productInfo", "productInfoBottom", "text"],
+  productInfoBottom: ["productInfoBottom", "text"],
   text: ["text"]
 };
 
@@ -209,7 +215,6 @@ export const PlasmicArticleCard = Object.assign(
     img: makeNodeComponent("img"),
     productInfo: makeNodeComponent("productInfo"),
     productInfoBottom: makeNodeComponent("productInfoBottom"),
-    cmsEntryField: makeNodeComponent("cmsEntryField"),
     text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicArticleCard
     internalVariantProps: PlasmicArticleCard__VariantProps,

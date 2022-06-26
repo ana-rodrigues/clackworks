@@ -29,8 +29,9 @@
   color: var(--token-m6T18ReYY);
   font-family: var(--token-27hF1Rg-3);
   letter-spacing: -0.25px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--token-cEZuuWccf);
+  line-height: var(--token-oybP_xLay);
   width: 100%;
   height: auto;
   max-width: 800px;
@@ -78,7 +79,7 @@
 .text__agEsI {
   color: var(--token-m6T18ReYY);
   font-family: var(--token-GZcn0Qi5a);
-  font-size: var(--token-cEZuuWccf);
+  font-size: var(--token-2WImiHVlH);
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
