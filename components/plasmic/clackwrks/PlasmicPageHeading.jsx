@@ -14,10 +14,8 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
-import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "../clackworks/PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicPageHeading.module.css"; // plasmic-import: NUEGqpqFkt/css
@@ -33,18 +31,12 @@ function PlasmicPageHeading__RenderFunc(props) {
   const args = Object.assign({}, defaultPageHeading__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsfWbazDhpHIcD()
-  });
-
   return (
-    <p.Stack
-      as={"hgroup"}
+    <hgroup
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -70,7 +62,7 @@ function PlasmicPageHeading__RenderFunc(props) {
 
         value: args.children
       })}
-    </p.Stack>
+    </hgroup>
   );
 }
 

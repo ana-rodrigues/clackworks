@@ -349,14 +349,7 @@
     }
   ],
   "globalVariants": {
-    "variantGroups": [
-      {
-        "id": "fWbazDhpHIc_D",
-        "name": "Screen",
-        "projectId": "ggKD3RisT9Ubzud33WNkiG",
-        "contextFilePath": "plasmic/clackworks/PlasmicGlobalVariant__Screen.jsx"
-      }
-    ]
+    "variantGroups": []
   },
   "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {

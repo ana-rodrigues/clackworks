@@ -5,7 +5,9 @@
   width: 100%;
   height: auto;
   background: var(--token-lKJzSpnpR);
+  backdrop-filter: blur(16px);
   min-width: 0;
+  -webkit-backdrop-filter: blur(16px);
   padding: var(--token-14ZACRAey);
 }
 .root > :global(.__wab_flex-container) {
@@ -25,7 +27,7 @@
 .img {
   position: relative;
   object-fit: cover;
-  max-width: 30%;
+  max-width: 20%;
 }
 .img > picture > img {
   object-fit: cover;

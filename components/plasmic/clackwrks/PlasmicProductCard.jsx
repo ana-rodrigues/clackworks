@@ -13,16 +13,13 @@ import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
   useTrigger,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { CmsRowImage } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: dj_Vc2QmFA/codeComponent
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
-import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "../clackworks/PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicProductCard.module.css"; // plasmic-import: 1Fr4_fFN1w/css
@@ -39,15 +36,9 @@ function PlasmicProductCard__RenderFunc(props) {
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
-  const [isRootActive, triggerRootActiveProps] = useTrigger("usePressed", {});
-  const [isRootFocus, triggerRootFocusProps] = useTrigger("useFocused", {});
   const triggers = {
-    hoverActiveFocus_root: isRootHover && isRootActive && isRootFocus
+    hover_root: isRootHover
   };
-
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsfWbazDhpHIcD()
-  });
 
   return (
     <p.PlasmicLink
@@ -68,11 +59,7 @@ function PlasmicProductCard__RenderFunc(props) {
       href={"/"}
       platform={"nextjs"}
       title={""}
-      data-plasmic-trigger-props={[
-        triggerRootHoverProps,
-        triggerRootActiveProps,
-        triggerRootFocusProps
-      ]}
+      data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
       <article
         data-plasmic-name={"article"}
@@ -97,20 +84,12 @@ function PlasmicProductCard__RenderFunc(props) {
                 data-plasmic-override={overrides.img}
                 alt={""}
                 className={classNames(sty.img)}
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "auto"
-                    : "100%"
-                }
+                displayHeight={"100%"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "100%"
-                    : "100%"
-                }
+                displayWidth={"100%"}
                 loading={"lazy"}
                 src={
                   "https://studio.plasmic.app/static/img/placeholder-full.png"
@@ -128,21 +107,20 @@ function PlasmicProductCard__RenderFunc(props) {
             className={classNames(projectcss.all, sty.productInfo)}
           >
             {true ? (
-              <p.Stack
-                as={"div"}
+              <div
                 data-plasmic-name={"productInfoBottom"}
                 data-plasmic-override={overrides.productInfoBottom}
-                hasGap={true}
                 className={classNames(projectcss.all, sty.productInfoBottom)}
               >
-                <CmsRowField
-                  className={classNames(
-                    "__wab_instance",
-                    sty.cmsEntryField___9EwoE
-                  )}
-                />
-
-                {(triggers.hoverActiveFocus_root ? true : true) ? (
+                {(triggers.hover_root ? true : true) ? (
+                  <CmsRowField
+                    className={classNames(
+                      "__wab_instance",
+                      sty.cmsEntryField___9EwoE
+                    )}
+                  />
+                ) : null}
+                {(triggers.hover_root ? true : true) ? (
                   <CmsRowField
                     className={classNames(
                       "__wab_instance",
@@ -151,7 +129,7 @@ function PlasmicProductCard__RenderFunc(props) {
                     field={"productPrice"}
                   />
                 ) : null}
-                {(triggers.hoverActiveFocus_root ? true : true) ? (
+                {(triggers.hover_root ? true : true) ? (
                   <div
                     data-plasmic-name={"text"}
                     data-plasmic-override={overrides.text}
@@ -161,10 +139,10 @@ function PlasmicProductCard__RenderFunc(props) {
                       sty.text
                     )}
                   >
-                    <p.Trans>{"Buy"}</p.Trans>
+                    <p.Trans>{"Buy →"}</p.Trans>
                   </div>
                 ) : null}
-              </p.Stack>
+              </div>
             ) : null}
           </p.Stack>
         ) : null}

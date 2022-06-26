@@ -14,11 +14,9 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: lgaro2SfB7/component
-import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "../clackworks/PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicProductInformation.module.css"; // plasmic-import: jbimC5mwcH/css
@@ -34,10 +32,6 @@ function PlasmicProductInformation__RenderFunc(props) {
   const args = Object.assign({}, defaultProductInformation__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsfWbazDhpHIcD()
-  });
-
   return true ? (
     <p.Stack
       as={"div"}

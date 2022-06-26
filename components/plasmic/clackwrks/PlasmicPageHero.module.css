@@ -50,11 +50,6 @@
   > img {
   margin-top: var(--token-cC9ZiUnEi);
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .heroHeading {
-    padding: var(--token-GEYkHVTwq);
-  }
-}
 .h1 {
   color: var(--token-m6T18ReYY);
   font-size: var(--token-DDVMvTmf6);
@@ -69,11 +64,6 @@
   text-align: left;
   min-width: 0;
   padding: var(--token-GEYkHVTwq) var(--token-GEYkHVTwq) 16px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .h1 {
-    font-size: var(--token-1576dddvS);
-  }
 }
 .img {
   position: relative;

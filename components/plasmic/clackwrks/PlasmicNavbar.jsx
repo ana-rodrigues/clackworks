@@ -13,14 +13,11 @@ import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
-import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "../clackworks/PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicNavbar.module.css"; // plasmic-import: HFmAu0eVuW/css
@@ -36,10 +33,6 @@ function PlasmicNavbar__RenderFunc(props) {
   const args = Object.assign({}, defaultNavbar__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsfWbazDhpHIcD()
-  });
-
   return (
     <NavigationBar
       data-plasmic-name={"root"}
@@ -58,11 +51,7 @@ function PlasmicNavbar__RenderFunc(props) {
           <p.PlasmicImg
             alt={""}
             className={classNames(sty.img__u6Fqt)}
-            displayHeight={
-              hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "16px"
-                : "48px /* plasmic-token: zRQjz2Otc */"
-            }
+            displayHeight={"48px /* plasmic-token: zRQjz2Otc */"}
             displayMaxHeight={"none"}
             displayMaxWidth={"none"}
             displayMinHeight={"0"}
@@ -96,24 +85,19 @@ function PlasmicNavbar__RenderFunc(props) {
       menuItems={null}
       openButton={
         <React.Fragment>
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-          ) ? (
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__fpDkW)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"none"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"auto"}
-              src={"https://static1.plasmic.app/menu.svg"}
-            />
-          ) : null}
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-          ) ? (
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__fpDkW)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            src={"https://static1.plasmic.app/menu.svg"}
+          />
+
+          {true ? (
             <div
               data-plasmic-name={"text"}
               data-plasmic-override={overrides.text}

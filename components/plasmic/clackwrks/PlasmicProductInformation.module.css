@@ -25,35 +25,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 160px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    height: auto;
-    max-width: none;
-    border-radius: 24px;
-    padding: var(--token-14ZACRAey);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root > :global(.__wab_flex-container) {
-    margin-left: calc(0px - 0px);
-    width: calc(100% + 0px);
-    margin-top: calc(0px - 160px);
-    height: calc(100% + 160px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root > :global(.__wab_flex-container) > *,
-  .root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-  .root > :global(.__wab_flex-container) > picture > img,
-  .root
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
-    margin-left: 0px;
-    margin-top: 160px;
-  }
-}
 .text__d9Nh {
   color: var(--token-m6T18ReYY);
   font-family: var(--token-27hF1Rg-3);
