@@ -12,10 +12,13 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: RqtriAgyOg/css
@@ -31,6 +34,10 @@ function PlasmicFooter__RenderFunc(props) {
   const args = Object.assign({}, defaultFooter__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsfWbazDhpHIcD()
+  });
+
   return (
     <p.Stack
       as={"div"}
@@ -55,7 +62,9 @@ function PlasmicFooter__RenderFunc(props) {
         className={classNames(sty.img)}
         displayHeight={"auto"}
         displayMaxHeight={"none"}
-        displayMaxWidth={"20%"}
+        displayMaxWidth={
+          hasVariant(globalVariants, "screen", "mobile") ? "60%" : "20%"
+        }
         displayMinHeight={"0"}
         displayMinWidth={"0"}
         displayWidth={"auto"}

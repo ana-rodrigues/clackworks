@@ -15,12 +15,14 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Footer from "../../Footer"; // plasmic-import: RqtriAgyOg/component
 import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: 8N9-WfZSaq/codeComponent
 import ArticleCard from "../../ArticleCard"; // plasmic-import: AHLMP-tgYM/component
 import ProductCard from "../../ProductCard"; // plasmic-import: 1Fr4_fFN1w/component
+import { useScreenVariants as useScreenVariantsfWbazDhpHIcD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fWbazDhpHIc_D/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: QQg6AVsQ0X/css
@@ -36,12 +38,18 @@ function PlasmicHome__RenderFunc(props) {
   const args = Object.assign({}, defaultHome__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsfWbazDhpHIcD()
+  });
+
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Home"}</title>
         <meta key="og:title" property="og:title" content={"Home"} />
+
+        <link ref="canonical" href={"https://clackwrks.com"} />
       </Head>
 
       <style>{`
@@ -195,7 +203,7 @@ function PlasmicHome__RenderFunc(props) {
                       sty.h2__bs4Ia
                     )}
                   >
-                    <p.Trans>{"For sale"}</p.Trans>
+                    <p.Trans>{"Keebs"}</p.Trans>
                   </h2>
                 </div>
               ) : null}

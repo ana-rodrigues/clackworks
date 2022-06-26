@@ -197,6 +197,20 @@
           "cssFilePath": "plasmic/clackwrks/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "LvGLACoIrmm",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicTextInput.jsx",
+          "importSpec": {
+            "modulePath": "TextInput.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
         }
       ],
       "icons": [
@@ -209,6 +223,11 @@
           "id": "Wm92nBReP3i",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon.jsx"
+        },
+        {
+          "id": "DrPWPW85Y_A",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Searchsvg.jsx"
         }
       ],
       "images": [
@@ -349,7 +368,14 @@
     }
   ],
   "globalVariants": {
-    "variantGroups": []
+    "variantGroups": [
+      {
+        "id": "fWbazDhpHIc_D",
+        "name": "Screen",
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "contextFilePath": "plasmic/clackwrks/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
   },
   "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {

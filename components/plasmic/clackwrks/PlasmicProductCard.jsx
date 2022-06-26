@@ -56,7 +56,7 @@ function PlasmicProductCard__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"/"}
+      href={triggers.hover_root ? "mailto: a.rodrigues.email" : "/"}
       platform={"nextjs"}
       title={""}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
