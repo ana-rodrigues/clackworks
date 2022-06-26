@@ -1,4 +1,16 @@
 .root {
+  position: relative;
+  display: flex;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.root:hover:active:focus:link {
+  transform: none;
+  cursor: pointer;
+  pointer-events: auto;
+  outline: none;
+}
+.article {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -6,13 +18,12 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
   background: none;
   min-width: 0;
   padding: var(--token-GEYkHVTwq);
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .root {
+  .article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -21,6 +32,9 @@
     max-width: none;
     flex-column-gap: 0px;
   }
+}
+.root:hover:active:focus:link .article {
+  outline: none;
 }
 .productTop {
   display: flex;
@@ -34,8 +48,14 @@
   min-width: 0;
   padding: var(--token-GEYkHVTwq);
 }
+.root:hover:active:focus:link .productTop {
+  outline: none;
+}
 .cmsEntryImage:global(.__wab_instance) {
   max-width: 100%;
+}
+.root:hover:active:focus:link .cmsEntryImage:global(.__wab_instance) {
+  outline: none;
 }
 .img {
   object-fit: cover;
@@ -57,6 +77,14 @@
     height: auto;
     min-width: 0;
   }
+}
+.root:hover:active:focus:link .img {
+  transform: none;
+  cursor: auto;
+  mix-blend-mode: normal;
+  backdrop-filter: brightness(50%);
+  outline: none;
+  -webkit-backdrop-filter: brightness(50%);
 }
 .productInfo {
   flex-direction: column;
@@ -95,6 +123,9 @@
     min-height: auto;
     padding: var(--token-14ZACRAey) var(--token-GEYkHVTwq);
   }
+}
+.root:hover:active:focus:link .productInfo {
+  outline: none;
 }
 .productInfoBottom {
   flex-direction: row;
@@ -143,6 +174,9 @@
     margin-top: var(--token-GEYkHVTwq);
   }
 }
+.root:hover:active:focus:link .productInfoBottom {
+  outline: none;
+}
 .cmsEntryField___9EwoE:global(.__wab_instance) {
   color: var(--token-m6T18ReYY);
   font-size: var(--token-1576dddvS);
@@ -177,4 +211,25 @@
   line-height: var(--token-POa7fIbwH);
   max-width: 100%;
   position: relative;
+}
+.root:hover:active:focus:link .cmsEntryField___6QY9:global(.__wab_instance) {
+  display: none;
+  outline: none;
+}
+.text {
+  color: var(--token-m6T18ReYY);
+  font-size: var(--token-1576dddvS);
+  letter-spacing: -1px;
+  line-height: var(--token-POa7fIbwH);
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  text-align: right;
+  min-width: 0;
+  display: none;
+}
+.root:hover:active:focus:link .text {
+  display: block;
+  outline: none;
 }

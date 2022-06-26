@@ -55,7 +55,7 @@ function PlasmicFooter__RenderFunc(props) {
         className={classNames(sty.img)}
         displayHeight={"auto"}
         displayMaxHeight={"none"}
-        displayMaxWidth={"40%"}
+        displayMaxWidth={"30%"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}
         displayWidth={"auto"}

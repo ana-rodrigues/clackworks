@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Navbar from "../../Navbar"; // plasmic-import: HFmAu0eVuW/component
+import Footer from "../../Footer"; // plasmic-import: RqtriAgyOg/component
 import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: 8N9-WfZSaq/codeComponent
 import ArticleCard from "../../ArticleCard"; // plasmic-import: AHLMP-tgYM/component
 import ProductCard from "../../ProductCard"; // plasmic-import: 1Fr4_fFN1w/component
@@ -71,10 +71,10 @@ function PlasmicHome__RenderFunc(props) {
             sty.body
           )}
         >
-          <Navbar
-            data-plasmic-name={"navbar"}
-            data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar)}
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
           />
 
           <p.Stack
@@ -289,7 +289,7 @@ function PlasmicHome__RenderFunc(props) {
 const PlasmicDescendants = {
   body: [
     "body",
-    "navbar",
+    "footer",
     "layout",
     "articles",
     "headingLeft",
@@ -301,7 +301,7 @@ const PlasmicDescendants = {
     "productCard"
   ],
 
-  navbar: ["navbar"],
+  footer: ["footer"],
   layout: [
     "layout",
     "articles",
@@ -353,7 +353,7 @@ export const PlasmicHome = Object.assign(
   makeNodeComponent("body"),
   {
     // Helper components rendering sub-elements
-    navbar: makeNodeComponent("navbar"),
+    footer: makeNodeComponent("footer"),
     layout: makeNodeComponent("layout"),
     articles: makeNodeComponent("articles"),
     headingLeft: makeNodeComponent("headingLeft"),

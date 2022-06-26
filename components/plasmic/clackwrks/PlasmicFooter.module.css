@@ -4,7 +4,9 @@
   position: relative;
   width: 100%;
   height: auto;
+  background: var(--token-lKJzSpnpR);
   min-width: 0;
+  padding: var(--token-14ZACRAey);
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -23,7 +25,7 @@
 .img {
   position: relative;
   object-fit: cover;
-  max-width: 40%;
+  max-width: 30%;
 }
 .img > picture > img {
   object-fit: cover;
