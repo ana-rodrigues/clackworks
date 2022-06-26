@@ -1,0 +1,32 @@
+.root {
+  background: var(--token-m6T18ReYY);
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  border-radius: 40px;
+  padding: var(--token-cC9ZiUnEi);
+  border: 1px none #d3d3d3;
+}
+.root:hover {
+  background: var(--token-lKJzSpnpR);
+  border-style: solid;
+  border-color: var(--token-m6T18ReYY);
+}
+.freeBox {
+  display: flex;
+  position: relative;
+}
+.slotTargetChildren {
+  color: var(--token-lKJzSpnpR);
+  font-family: var(--token-GZcn0Qi5a);
+  font-size: var(--token-cEZuuWccf);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.root:hover .slotTargetChildren {
+  color: var(--token-m6T18ReYY);
+}

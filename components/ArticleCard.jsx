@@ -18,7 +18,7 @@ function ArticleCard_(props, ref) {
   //
   // By default, we are just piping all ArticleCardProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicArticleCard articleCard={{ ref }} {...props} />;
+  return <PlasmicArticleCard root={{ ref }} {...props} />;
 }
 
 const ArticleCard = React.forwardRef(ArticleCard_);

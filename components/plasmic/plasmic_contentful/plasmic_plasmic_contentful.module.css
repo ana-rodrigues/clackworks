@@ -19,25 +19,30 @@
   --mixin-ybhqG75CwvYL_font-size: 72px;
   --mixin-ybhqG75CwvYL_line-height: 1;
   --mixin-ybhqG75CwvYL_letter-spacing: -4px;
+  --mixin-ybhqG75CwvYL_white-space: pre-wrap;
   --mixin-be0-0P0pD_UZ_font-family: "Inter";
   --mixin-be0-0P0pD_UZ_color: #000000;
   --mixin-be0-0P0pD_UZ_font-size: 48px;
   --mixin-be0-0P0pD_UZ_font-weight: 700;
   --mixin-be0-0P0pD_UZ_letter-spacing: -1px;
   --mixin-be0-0P0pD_UZ_line-height: 1.1;
+  --mixin-be0-0P0pD_UZ_white-space: pre-wrap;
   --mixin-vmFxJiR_yc1C_color: #0070f3;
+  --mixin-vmFxJiR_yc1C_white-space: pre-wrap;
   --mixin-5TAChFf1iQdT_font-family: "Inter";
   --mixin-5TAChFf1iQdT_color: #000000;
   --mixin-5TAChFf1iQdT_font-size: 32px;
   --mixin-5TAChFf1iQdT_font-weight: 600;
   --mixin-5TAChFf1iQdT_letter-spacing: -0.8px;
   --mixin-5TAChFf1iQdT_line-height: 1.2;
+  --mixin-5TAChFf1iQdT_white-space: pre-wrap;
   --mixin-CQGgi_fX9eCY_font-family: "Inter";
   --mixin-CQGgi_fX9eCY_color: #000000;
   --mixin-CQGgi_fX9eCY_font-size: 24px;
   --mixin-CQGgi_fX9eCY_font-weight: 600;
   --mixin-CQGgi_fX9eCY_letter-spacing: -0.5px;
   --mixin-CQGgi_fX9eCY_line-height: 1.3;
+  --mixin-CQGgi_fX9eCY_white-space: pre-wrap;
   --mixin-3hfeTWN8_-6i_background: linear-gradient(#f8f8f8, #f8f8f8);
   --mixin-3hfeTWN8_-6i_border-bottom-color: #dddddd;
   --mixin-3hfeTWN8_-6i_border-bottom-style: solid;
@@ -60,11 +65,13 @@
   --mixin-3hfeTWN8_-6i_padding-left: 4px;
   --mixin-3hfeTWN8_-6i_padding-right: 4px;
   --mixin-3hfeTWN8_-6i_padding-top: 1px;
+  --mixin-3hfeTWN8_-6i_white-space: pre-wrap;
   --mixin-YfUeCLiweVE__border-left-color: #dddddd;
   --mixin-YfUeCLiweVE__border-left-style: solid;
   --mixin-YfUeCLiweVE__border-left-width: 3px;
   --mixin-YfUeCLiweVE__color: #888888;
   --mixin-YfUeCLiweVE__padding-left: 10px;
+  --mixin-YfUeCLiweVE__white-space: pre-wrap;
   --mixin-GtVVhZmjt6mi_background: linear-gradient(#f8f8f8, #f8f8f8);
   --mixin-GtVVhZmjt6mi_border-bottom-color: #dddddd;
   --mixin-GtVVhZmjt6mi_border-bottom-style: solid;
@@ -87,6 +94,7 @@
   --mixin-GtVVhZmjt6mi_padding-left: 6px;
   --mixin-GtVVhZmjt6mi_padding-right: 6px;
   --mixin-GtVVhZmjt6mi_padding-top: 3px;
+  --mixin-GtVVhZmjt6mi_white-space: pre-wrap;
   --mixin-VQPBSo3p7NXM_display: flex;
   --mixin-VQPBSo3p7NXM_flex-direction: column;
   --mixin-VQPBSo3p7NXM_align-items: stretch;
@@ -95,6 +103,7 @@
   --mixin-VQPBSo3p7NXM_padding-left: 40px;
   --mixin-VQPBSo3p7NXM_position: relative;
   --mixin-VQPBSo3p7NXM_list-style-type: disc;
+  --mixin-VQPBSo3p7NXM_white-space: pre-wrap;
   --mixin-lQyTfnkJSQ8jm_display: flex;
   --mixin-lQyTfnkJSQ8jm_flex-direction: column;
   --mixin-lQyTfnkJSQ8jm_align-items: stretch;
@@ -103,18 +112,22 @@
   --mixin-lQyTfnkJSQ8jm_padding-left: 40px;
   --mixin-lQyTfnkJSQ8jm_position: relative;
   --mixin-lQyTfnkJSQ8jm_list-style-type: decimal;
+  --mixin-lQyTfnkJSQ8jm_white-space: pre-wrap;
   --mixin-mWogL8ep8OeGH_font-family: "Inter";
   --mixin-mWogL8ep8OeGH_color: #000000;
   --mixin-mWogL8ep8OeGH_font-size: 20px;
   --mixin-mWogL8ep8OeGH_font-weight: 600;
   --mixin-mWogL8ep8OeGH_letter-spacing: -0.3px;
   --mixin-mWogL8ep8OeGH_line-height: 1.5;
+  --mixin-mWogL8ep8OeGH_white-space: pre-wrap;
   --mixin-EWoV99G7q0ptt_font-family: "Inter";
   --mixin-EWoV99G7q0ptt_color: #000000;
   --mixin-EWoV99G7q0ptt_font-size: 16px;
   --mixin-EWoV99G7q0ptt_font-weight: 600;
   --mixin-EWoV99G7q0ptt_line-height: 1.5;
+  --mixin-EWoV99G7q0ptt_white-space: pre-wrap;
   --mixin-2eK972Tt8CL0a_color: #3291ff;
+  --mixin-2eK972Tt8CL0a_white-space: pre-wrap;
 }
 
 :where(.all) {

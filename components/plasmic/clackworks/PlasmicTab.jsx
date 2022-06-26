@@ -16,6 +16,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import TabLink from "../../TabLink"; // plasmic-import: 8uLYq857Fx/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicTab.module.css"; // plasmic-import: IaDjY5xN7v/css
@@ -46,25 +47,13 @@ function PlasmicTab__RenderFunc(props) {
         sty.tab
       )}
     >
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text___41M5L
-        )}
-      >
-        <p.Trans>{"Builds"}</p.Trans>
-      </div>
+      <TabLink className={classNames("__wab_instance", sty.tabLink__gaKWg)}>
+        <p.Trans>{"Products"}</p.Trans>
+      </TabLink>
 
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__xEhb3
-        )}
-      >
-        <p.Trans>{"Labs"}</p.Trans>
-      </div>
+      <TabLink className={classNames("__wab_instance", sty.tabLink__umf6H)}>
+        <p.Trans>{"Services"}</p.Trans>
+      </TabLink>
     </div>
   );
 }

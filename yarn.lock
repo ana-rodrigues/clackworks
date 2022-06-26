@@ -517,6 +517,14 @@
   dependencies:
     window-or-global "^1.0.1"
 
+"@plasmicapp/query@0.1.50":
+  version "0.1.50"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/query/-/query-0.1.50.tgz#cb1ca2ccfed8ebdf58f06a42ed55f1ba803afa32"
+  integrity sha512-BJrxIYqOBcHnR6gcBLtBF3ucm2vzQkwzD0pO3odtTAWwq7phD0JfxdByT5kgXH7VSPoVWnIB1lQrMyqA7jLk4A==
+  dependencies:
+    react-ssr-prepass "^1.4.0"
+    swr ">1.0.0"
+
 "@plasmicapp/query@^0.1.42":
   version "0.1.49"
   resolved "https://registry.yarnpkg.com/@plasmicapp/query/-/query-0.1.49.tgz#1a1ecd2951687dba4a766976d27e798f48b1541f"
@@ -550,6 +558,14 @@
     "@react-stately/tree" "^3.2.4"
     classnames "^2.2.6"
 
+"@plasmicpkgs/plasmic-cms@^0.0.98":
+  version "0.0.98"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-cms/-/plasmic-cms-0.0.98.tgz#1ba7ad9826a0d44371b0aa44e2e48005e98fd236"
+  integrity sha512-MtRIk3fD/j6ZJ/H8N0EonM8kp3cCRNbB2NU6st0JGsIBIk+0Dwjd5jZRexwG/CZDM2/CjDcJZIPNr7n4DMCG1w==
+  dependencies:
+    "@plasmicapp/query" "0.1.50"
+    dayjs "^1.10.7"
+
 "@plasmicpkgs/plasmic-contentful@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-contentful/-/plasmic-contentful-0.0.2.tgz#7ed258642b9877bca19fda8dc529e57340df7b57"
@@ -563,6 +579,11 @@
     contentful "^9.1.28"
     lodash "^4.17.21"
     lodash-es "^4.17.21"
+
+"@plasmicpkgs/plasmic-nav@^0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-nav/-/plasmic-nav-0.0.34.tgz#dc9111b0a4811196e76338c04a535b9e39851930"
+  integrity sha512-4j/A2ABDYA7AoPNToPQNrtKPoWG+MlqcnpEpLCHDagN4WK1gwNc6Qv2HsEPkJYEKUt4UHeDs7COqjKU18cVOvw==
 
 "@react-aria/checkbox@^3.3.4":
   version "3.4.0"
@@ -1589,6 +1610,11 @@ damerau-levenshtein@^1.0.7:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
+
+dayjs@^1.10.7:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.3.tgz#4754eb694a624057b9ad2224b67b15d552589258"
+  integrity sha512-xxwlswWOlGhzgQ4TKzASQkUhqERI3egRNqgV4ScR8wlANA/A9tZ7miXa44vTTKEq5l7vWoL5G57bG3zA+Kow0A==
 
 debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4, debug@~4.3.1:
   version "4.3.4"

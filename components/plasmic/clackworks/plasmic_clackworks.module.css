@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=IBM+Plex+Mono%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=IBM+Plex+Mono%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=DM+Sans%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700&display=swap");
 
 .plasmic_tokens {
-  --token-lKJzSpnpR: #131316;
+  --token-lKJzSpnpR: #0a0a0a;
   --plasmic-token-bk-1000-pitch-black: var(--token-lKJzSpnpR);
   --token-m6T18ReYY: #ffffff;
   --plasmic-token-bk-000-pure-white: var(--token-m6T18ReYY);
@@ -23,9 +23,9 @@
   --plasmic-token-spacing-l: var(--token-14ZACRAey);
   --token-zRQjz2Otc: 48px;
   --plasmic-token-spacing-xl: var(--token-zRQjz2Otc);
-  --token-bqYVReuLc: 96px;
+  --token-bqYVReuLc: 80px;
   --plasmic-token-spacing-xxl: var(--token-bqYVReuLc);
-  --token-27hF1Rg-3: Uncut Sans;
+  --token-27hF1Rg-3: DM Sans;
   --plasmic-token-sans-serif: var(--token-27hF1Rg-3);
   --token-GZcn0Qi5a: IBM Plex Mono;
   --plasmic-token-monospace: var(--token-GZcn0Qi5a);
@@ -41,12 +41,14 @@
   --plasmic-token-s: var(--token-0PjLlNJGV);
   --token-i8uXO4WUf: 24px;
   --plasmic-token-l: var(--token-i8uXO4WUf);
-  --token-1576dddvS: 32px;
+  --token-1576dddvS: 26px;
   --plasmic-token-xl: var(--token-1576dddvS);
   --token-DDVMvTmf6: 48px;
   --plasmic-token-xxl: var(--token-DDVMvTmf6);
   --token-GEYkHVTwq: 0px;
   --plasmic-token-none: var(--token-GEYkHVTwq);
+  --token-LXdtDKGNi: 4em;
+  --plasmic-token-xxxl: var(--token-LXdtDKGNi);
 }
 
 .plasmic_default_styles {
@@ -68,25 +70,30 @@
   --mixin-njTj_WU2WNVD_font-size: 72px;
   --mixin-njTj_WU2WNVD_line-height: 1;
   --mixin-njTj_WU2WNVD_letter-spacing: -4px;
+  --mixin-njTj_WU2WNVD_white-space: pre-wrap;
   --mixin-ibUZaigD6EBi_font-family: "Inter";
   --mixin-ibUZaigD6EBi_color: #000000;
   --mixin-ibUZaigD6EBi_font-size: 48px;
   --mixin-ibUZaigD6EBi_font-weight: 700;
   --mixin-ibUZaigD6EBi_letter-spacing: -1px;
   --mixin-ibUZaigD6EBi_line-height: 1.1;
+  --mixin-ibUZaigD6EBi_white-space: pre-wrap;
   --mixin-QrHyKQv55wy1_color: #0070f3;
+  --mixin-QrHyKQv55wy1_white-space: pre-wrap;
   --mixin-co1i6dd_v2iH_font-family: "Inter";
   --mixin-co1i6dd_v2iH_color: #000000;
   --mixin-co1i6dd_v2iH_font-size: 32px;
   --mixin-co1i6dd_v2iH_font-weight: 600;
   --mixin-co1i6dd_v2iH_letter-spacing: -0.8px;
   --mixin-co1i6dd_v2iH_line-height: 1.2;
+  --mixin-co1i6dd_v2iH_white-space: pre-wrap;
   --mixin-BQpKyG_GlYge_font-family: "Inter";
   --mixin-BQpKyG_GlYge_color: #000000;
   --mixin-BQpKyG_GlYge_font-size: 24px;
   --mixin-BQpKyG_GlYge_font-weight: 600;
   --mixin-BQpKyG_GlYge_letter-spacing: -0.5px;
   --mixin-BQpKyG_GlYge_line-height: 1.3;
+  --mixin-BQpKyG_GlYge_white-space: pre-wrap;
   --mixin-i_BNXlxeHdiU_background: linear-gradient(#f8f8f8, #f8f8f8);
   --mixin-i_BNXlxeHdiU_border-bottom-color: #dddddd;
   --mixin-i_BNXlxeHdiU_border-bottom-style: solid;
@@ -109,11 +116,13 @@
   --mixin-i_BNXlxeHdiU_padding-left: 4px;
   --mixin-i_BNXlxeHdiU_padding-right: 4px;
   --mixin-i_BNXlxeHdiU_padding-top: 1px;
+  --mixin-i_BNXlxeHdiU_white-space: pre-wrap;
   --mixin-EX0prLD29Mze_border-left-color: #dddddd;
   --mixin-EX0prLD29Mze_border-left-style: solid;
   --mixin-EX0prLD29Mze_border-left-width: 3px;
   --mixin-EX0prLD29Mze_color: #888888;
   --mixin-EX0prLD29Mze_padding-left: 10px;
+  --mixin-EX0prLD29Mze_white-space: pre-wrap;
   --mixin-SbJd9becvI0W_background: linear-gradient(#f8f8f8, #f8f8f8);
   --mixin-SbJd9becvI0W_border-bottom-color: #dddddd;
   --mixin-SbJd9becvI0W_border-bottom-style: solid;
@@ -136,6 +145,7 @@
   --mixin-SbJd9becvI0W_padding-left: 6px;
   --mixin-SbJd9becvI0W_padding-right: 6px;
   --mixin-SbJd9becvI0W_padding-top: 3px;
+  --mixin-SbJd9becvI0W_white-space: pre-wrap;
   --mixin-MeKphwybvvPR_display: flex;
   --mixin-MeKphwybvvPR_flex-direction: column;
   --mixin-MeKphwybvvPR_align-items: stretch;
@@ -144,6 +154,7 @@
   --mixin-MeKphwybvvPR_padding-left: 40px;
   --mixin-MeKphwybvvPR_position: relative;
   --mixin-MeKphwybvvPR_list-style-type: disc;
+  --mixin-MeKphwybvvPR_white-space: pre-wrap;
   --mixin--gicKPVzz5AwI_display: flex;
   --mixin--gicKPVzz5AwI_flex-direction: column;
   --mixin--gicKPVzz5AwI_align-items: stretch;
@@ -152,18 +163,22 @@
   --mixin--gicKPVzz5AwI_padding-left: 40px;
   --mixin--gicKPVzz5AwI_position: relative;
   --mixin--gicKPVzz5AwI_list-style-type: decimal;
+  --mixin--gicKPVzz5AwI_white-space: pre-wrap;
   --mixin-HJXOnfKAXsS-o_font-family: "Inter";
   --mixin-HJXOnfKAXsS-o_color: #000000;
   --mixin-HJXOnfKAXsS-o_font-size: 20px;
   --mixin-HJXOnfKAXsS-o_font-weight: 600;
   --mixin-HJXOnfKAXsS-o_letter-spacing: -0.3px;
   --mixin-HJXOnfKAXsS-o_line-height: 1.5;
+  --mixin-HJXOnfKAXsS-o_white-space: pre-wrap;
   --mixin-jeAxbDyeJ08-4_font-family: "Inter";
   --mixin-jeAxbDyeJ08-4_color: #000000;
   --mixin-jeAxbDyeJ08-4_font-size: 16px;
   --mixin-jeAxbDyeJ08-4_font-weight: 600;
   --mixin-jeAxbDyeJ08-4_line-height: 1.5;
+  --mixin-jeAxbDyeJ08-4_white-space: pre-wrap;
   --mixin-PzSEn8Mjsuzmy_color: #3291ff;
+  --mixin-PzSEn8Mjsuzmy_white-space: pre-wrap;
 }
 
 :where(.all) {

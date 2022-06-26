@@ -6,26 +6,15 @@
   height: auto;
   background: #ffffff;
   border-radius: 24px;
-  padding: 8px 12px;
+  padding: var(--token-IOlAtZ9QC);
   border-width: 1px;
   border-style: solid;
 }
-.text___41M5L {
+.tabLink__gaKWg:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  width: auto;
-  height: auto;
-  max-width: 800px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
 }
-.text__xEhb3 {
+.tabLink__umf6H:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 16px;
-  min-width: 0;
 }

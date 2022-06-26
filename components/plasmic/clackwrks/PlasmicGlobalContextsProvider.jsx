@@ -5,9 +5,14 @@
 // Plasmic Project: ggKD3RisT9Ubzud33WNkiG
 import * as React from "react";
 import { ContentfulCredentialsProvider } from "@plasmicpkgs/plasmic-contentful"; // plasmic-import: lXSCSEWn2xb/codeComponent
+import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: OREVbGCcgN/codeComponent
 
 export default function GlobalContextsProvider(props) {
-  const { children, contentfulCredentialsProviderProps } = props;
+  const {
+    children,
+    contentfulCredentialsProviderProps,
+    cmsCredentialsProviderProps
+  } = props;
   return (
     <ContentfulCredentialsProvider
       {...contentfulCredentialsProviderProps}
@@ -15,7 +20,7 @@ export default function GlobalContextsProvider(props) {
         contentfulCredentialsProviderProps &&
         "accessToken" in contentfulCredentialsProviderProps
           ? contentfulCredentialsProviderProps.accessToken
-          : "aWvf6oSLTuqxKCxSUpokajdQr84hGQFE6zoJG7DVVLg"
+          : "SEc1jzkRRBHG08tcQwNcJSWKv7Ig-_LFBW_C61LJC2g"
       }
       environment={
         contentfulCredentialsProviderProps &&
@@ -27,10 +32,36 @@ export default function GlobalContextsProvider(props) {
         contentfulCredentialsProviderProps &&
         "space" in contentfulCredentialsProviderProps
           ? contentfulCredentialsProviderProps.space
-          : "lmfbwqzbh93n"
+          : "ylq9hh1cedo8"
       }
     >
-      {children}
+      <CmsCredentialsProvider
+        {...cmsCredentialsProviderProps}
+        databaseId={
+          cmsCredentialsProviderProps &&
+          "databaseId" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.databaseId
+            : "hXZ9HvGbBVJdG8JN7CsrbC"
+        }
+        databaseToken={
+          cmsCredentialsProviderProps &&
+          "databaseToken" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.databaseToken
+            : "msPgVSFTI38iDBIspUeCoIQo5uahDElMTzdj0cJxodxsdvljiBL4IZ0pB6VogUOruWFiMDRhW6yS3S9mm5A"
+        }
+        host={
+          cmsCredentialsProviderProps && "host" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.host
+            : "https://studio.plasmic.app"
+        }
+        locale={
+          cmsCredentialsProviderProps && "locale" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.locale
+            : "Default"
+        }
+      >
+        {children}
+      </CmsCredentialsProvider>
     </ContentfulCredentialsProvider>
   );
 }

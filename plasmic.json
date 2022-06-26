@@ -29,19 +29,6 @@
       "cssFilePath": "plasmic/clackworks/plasmic_clackworks.module.css",
       "components": [
         {
-          "id": "u0sNXC5X5Hnc",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "ggKD3RisT9Ubzud33WNkiG",
-          "renderModuleFilePath": "plasmic/clackworks/PlasmicHomepage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/index.jsx"
-          },
-          "cssFilePath": "plasmic/clackworks/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "IaDjY5xN7v",
           "name": "Tab",
           "type": "managed",
@@ -51,45 +38,6 @@
             "modulePath": "Tab.jsx"
           },
           "cssFilePath": "plasmic/clackworks/PlasmicTab.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "jQ3WjwLWnw",
-          "name": "Navbar",
-          "type": "managed",
-          "projectId": "ggKD3RisT9Ubzud33WNkiG",
-          "renderModuleFilePath": "plasmic/clackworks/PlasmicNavbar.jsx",
-          "importSpec": {
-            "modulePath": "Navbar.jsx"
-          },
-          "cssFilePath": "plasmic/clackworks/PlasmicNavbar.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "k69n-JZyE6",
-          "name": "ButtonGhost",
-          "type": "managed",
-          "projectId": "ggKD3RisT9Ubzud33WNkiG",
-          "renderModuleFilePath": "plasmic/clackworks/PlasmicButtonGhost.jsx",
-          "importSpec": {
-            "modulePath": "ButtonGhost.jsx"
-          },
-          "cssFilePath": "plasmic/clackworks/PlasmicButtonGhost.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "CWGZEjAICQ",
-          "name": "ArticleCard",
-          "type": "managed",
-          "projectId": "ggKD3RisT9Ubzud33WNkiG",
-          "renderModuleFilePath": "plasmic/clackwrks/PlasmicArticleCard.jsx",
-          "importSpec": {
-            "modulePath": "ArticleCard.jsx"
-          },
-          "cssFilePath": "plasmic/clackwrks/PlasmicArticleCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -105,9 +53,164 @@
           "cssFilePath": "plasmic/clackwrks/PlasmicArticleTag.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "8uLYq857Fx",
+          "name": "TabLink",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicTabLink.jsx",
+          "importSpec": {
+            "modulePath": "TabLink.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicTabLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JYReltgUmo",
+          "name": "PageHero",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicPageHero.jsx",
+          "importSpec": {
+            "modulePath": "PageHero.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicPageHero.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NUEGqpqFkt",
+          "name": "PageHeading",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicPageHeading.jsx",
+          "importSpec": {
+            "modulePath": "PageHeading.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicPageHeading.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "jbimC5mwcH",
+          "name": "ProductInformation",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicProductInformation.jsx",
+          "importSpec": {
+            "modulePath": "ProductInformation.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicProductInformation.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "yN0iPoaTD0P",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "lgaro2SfB7",
+          "name": "ButtonPrimary",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicButtonPrimary.jsx",
+          "importSpec": {
+            "modulePath": "ButtonPrimary.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicButtonPrimary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "HFmAu0eVuW",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicNavbar.jsx",
+          "importSpec": {
+            "modulePath": "Navbar.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "1Fr4_fFN1w",
+          "name": "ProductCard",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicProductCard.jsx",
+          "importSpec": {
+            "modulePath": "ProductCard.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicProductCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "QQg6AVsQ0X",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicHome.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "AHLMP-tgYM",
+          "name": "ArticleCard",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicArticleCard.jsx",
+          "importSpec": {
+            "modulePath": "ArticleCard.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicArticleCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "RqtriAgyOg",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "id": "Q8GGippUpY8",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "Wm92nBReP3i",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon.jsx"
+        }
+      ],
       "images": [
         {
           "id": "W2xDoz7T4",
@@ -118,6 +221,31 @@
           "id": "a8u4g9p24",
           "name": "Variation=C.png",
           "filePath": "../public/plasmic/clackwrks/images/variationCpng.png"
+        },
+        {
+          "id": "dNVFmGcck",
+          "name": "Left.png",
+          "filePath": "../public/plasmic/clackwrks/images/leftpng.png"
+        },
+        {
+          "id": "YbUDViTqC",
+          "name": "Illustration.png",
+          "filePath": "../public/plasmic/clackwrks/images/illustrationpng.png"
+        },
+        {
+          "id": "dF-Z2rUNZ",
+          "name": "IMG_5926.JPG",
+          "filePath": "../public/plasmic/clackwrks/images/img5926Jpg.jpeg"
+        },
+        {
+          "id": "beT5Rcwjg",
+          "name": "IMG_6057.JPG",
+          "filePath": "../public/plasmic/clackwrks/images/img6057Jpg.jpeg"
+        },
+        {
+          "id": "Up0070lOc",
+          "name": "IMG_6057.JPG 2",
+          "filePath": "../public/plasmic/clackwrks/images/img6057Jpg2.jpeg"
         }
       ],
       "indirect": false,
@@ -150,6 +278,69 @@
           "id": "lXSCSEWn2xb",
           "name": "ContentfulCredentialsProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        }
+      ]
+    },
+    {
+      "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
+      "projectApiToken": "L5kqyh9xqKCqpdc8gqCglVcLZTxdkkP1Dt9pLUlWpyKVItIbbXr5272ePgMpZZiezhSe0AIOuQB353jQnw",
+      "projectName": "plasmic-cms",
+      "version": "6.1.6",
+      "cssFilePath": "plasmic/plasmic_cms/plasmic_plasmic_cms.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_cms/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "w6HdOz-Pcn",
+          "name": "CmsRowField",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "Ds6UdKRHmq",
+          "name": "CmsRowLink",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "dj_Vc2QmFA",
+          "name": "CmsRowImage",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "r3UO4W-xcR",
+          "name": "CmsRowFieldValue",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "OREVbGCcgN",
+          "name": "CmsCredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8N9-WfZSaq",
+          "name": "CmsQueryRepeater",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        }
+      ]
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.0.2",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ]
     }

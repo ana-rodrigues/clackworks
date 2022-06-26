@@ -43,7 +43,7 @@
     {
       "name": "BK 1000 Pitch Black",
       "type": "color",
-      "value": "#131316",
+      "value": "#0A0A0A",
       "category": "color",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -133,7 +133,7 @@
     {
       "name": "Sans Serif",
       "type": "fontfamily",
-      "value": "Uncut Sans",
+      "value": "DM Sans",
       "category": "fontfamily",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -193,7 +193,7 @@
     {
       "name": "Spacing XXL",
       "type": "spacing",
-      "value": "96px",
+      "value": "80px",
       "category": "spacing",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -213,7 +213,7 @@
     {
       "name": "XL",
       "type": "fontsize",
-      "value": "32px",
+      "value": "26px",
       "category": "fontsize",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -228,6 +228,16 @@
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
         "id": "DDVMvTmf6"
+      }
+    },
+    {
+      "name": "XXXL",
+      "type": "fontsize",
+      "value": "4em",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "LXdtDKGNi"
       }
     }
   ],

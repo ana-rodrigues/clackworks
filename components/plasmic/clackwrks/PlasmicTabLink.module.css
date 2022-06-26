@@ -1,0 +1,28 @@
+.root {
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  padding: var(--token-PrjspTxQ9) var(--token-cC9ZiUnEi);
+}
+.root:hover:active {
+  background: var(--token-lKJzSpnpR);
+  border-radius: 16px;
+  padding: var(--token-PrjspTxQ9) var(--token-cC9ZiUnEi);
+}
+.text {
+  display: flex;
+  position: relative;
+}
+.slotTargetChildren {
+  color: var(--token-lKJzSpnpR);
+  font-family: var(--token-GZcn0Qi5a);
+  font-size: var(--token-cEZuuWccf);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.root:hover:active .slotTargetChildren {
+  color: var(--token-m6T18ReYY);
+}
