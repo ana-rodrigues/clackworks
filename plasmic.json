@@ -147,19 +147,6 @@
           "componentType": "component"
         },
         {
-          "id": "1Fr4_fFN1w",
-          "name": "ProductCard",
-          "type": "managed",
-          "projectId": "ggKD3RisT9Ubzud33WNkiG",
-          "renderModuleFilePath": "plasmic/clackwrks/PlasmicProductCard.jsx",
-          "importSpec": {
-            "modulePath": "ProductCard.jsx"
-          },
-          "cssFilePath": "plasmic/clackwrks/PlasmicProductCard.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "QQg6AVsQ0X",
           "name": "Home",
           "type": "managed",
@@ -211,6 +198,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "1Fr4_fFN1w",
+          "name": "HighlightCard",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicHighlightCard.jsx",
+          "importSpec": {
+            "modulePath": "HighlightCard.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicHighlightCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "R372J40yRp",
+          "name": "Article",
+          "type": "managed",
+          "projectId": "ggKD3RisT9Ubzud33WNkiG",
+          "renderModuleFilePath": "plasmic/clackwrks/PlasmicArticle.jsx",
+          "importSpec": {
+            "modulePath": "../pages/article-detail.jsx"
+          },
+          "cssFilePath": "plasmic/clackwrks/PlasmicArticle.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -228,14 +241,29 @@
           "id": "DrPWPW85Y_A",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Searchsvg.jsx"
+        },
+        {
+          "id": "raQbi-TDGU6i",
+          "name": "LogoIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Logo.jsx"
+        },
+        {
+          "id": "tF_ht58lIHI1",
+          "name": "CartIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Cart.jsx"
+        },
+        {
+          "id": "y3hjFRA1V0Ci",
+          "name": "WishlistIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Wishlist.jsx"
+        },
+        {
+          "id": "dorDtaEXC",
+          "name": "ArrowRightIcon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__ArrowRight.jsx"
         }
       ],
       "images": [
-        {
-          "id": "W2xDoz7T4",
-          "name": "logo.png",
-          "filePath": "../public/plasmic/clackworks/images/logopng.png"
-        },
         {
           "id": "a8u4g9p24",
           "name": "Variation=C.png",
@@ -265,6 +293,11 @@
           "id": "Up0070lOc",
           "name": "IMG_6057.JPG 2",
           "filePath": "../public/plasmic/clackwrks/images/img6057Jpg2.jpeg"
+        },
+        {
+          "id": "W2xDoz7T4",
+          "name": "logo.png",
+          "filePath": "../public/plasmic/clackwrks/images/logopng.png"
         }
       ],
       "indirect": false,

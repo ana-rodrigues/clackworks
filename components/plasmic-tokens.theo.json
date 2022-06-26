@@ -53,7 +53,7 @@
     {
       "name": "Body",
       "type": "lineheight",
-      "value": "140%",
+      "value": "150%",
       "category": "lineheight",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",
@@ -141,6 +141,16 @@
       }
     },
     {
+      "name": "Serif",
+      "type": "fontfamily",
+      "value": "IBM Plex Serif",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "ggKD3RisT9Ubzud33WNkiG",
+        "id": "kIZYP6F-f"
+      }
+    },
+    {
       "name": "Spacing L",
       "type": "spacing",
       "value": "24px",
@@ -213,7 +223,7 @@
     {
       "name": "XL",
       "type": "fontsize",
-      "value": "26px",
+      "value": "32px",
       "category": "fontsize",
       "meta": {
         "projectId": "ggKD3RisT9Ubzud33WNkiG",

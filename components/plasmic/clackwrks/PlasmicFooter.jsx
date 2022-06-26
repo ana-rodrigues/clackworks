@@ -9,6 +9,7 @@
 // Plasmic Project: ggKD3RisT9Ubzud33WNkiG
 // Component: RqtriAgyOg
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
@@ -55,27 +56,40 @@ function PlasmicFooter__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.PlasmicImg
-        data-plasmic-name={"img"}
-        data-plasmic-override={overrides.img}
-        alt={""}
-        className={classNames(sty.img)}
-        displayHeight={"auto"}
-        displayMaxHeight={"none"}
-        displayMaxWidth={
-          hasVariant(globalVariants, "screen", "mobile") ? "60%" : "20%"
-        }
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={"auto"}
-        loading={"lazy"}
-        src={{
-          src: "/plasmic/clackworks/images/logopng.png",
-          fullWidth: 3088,
-          fullHeight: 372,
-          aspectRatio: undefined
-        }}
-      />
+      <p.PlasmicLink
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
+        component={Link}
+        href={"/"}
+        platform={"nextjs"}
+      >
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"auto"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={
+            hasVariant(globalVariants, "screen", "mobile")
+              ? "50%"
+              : hasVariant(globalVariants, "screen", "tablet")
+              ? "50%"
+              : "20%"
+          }
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"auto"}
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/clackwrks/images/logopng.png",
+            fullWidth: 3088,
+            fullHeight: 372,
+            aspectRatio: undefined
+          }}
+        />
+      </p.PlasmicLink>
 
       <div
         data-plasmic-name={"text"}
@@ -93,7 +107,8 @@ function PlasmicFooter__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "text"],
+  root: ["root", "link", "img", "text"],
+  link: ["link", "img"],
   img: ["img"],
   text: ["text"]
 };
@@ -127,6 +142,7 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicFooter
