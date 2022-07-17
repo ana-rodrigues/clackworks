@@ -26,13 +26,11 @@ export const PlasmicNavbar__VariantProps = new Array();
 
 export const PlasmicNavbar__ArgProps = new Array();
 
-export const defaultNavbar__Args = {};
-
 function PlasmicNavbar__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultNavbar__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <NavigationBar
       data-plasmic-name={"root"}
@@ -58,7 +56,7 @@ function PlasmicNavbar__RenderFunc(props) {
             displayMinWidth={"0"}
             displayWidth={"auto"}
             src={{
-              src: "/plasmic/clackworks/images/logopng.png",
+              src: "/plasmic/clackwrks/images/logopng.png",
               fullWidth: 3088,
               fullHeight: 372,
               aspectRatio: undefined
@@ -70,7 +68,7 @@ function PlasmicNavbar__RenderFunc(props) {
       closeButton={
         <p.PlasmicImg
           alt={""}
-          className={classNames(sty.img___8Hy8K)}
+          className={classNames(sty.img__nban)}
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
@@ -125,12 +123,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicNavbar__ArgProps,
-      internalVariantPropNames: PlasmicNavbar__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicNavbar__ArgProps,
+          internalVariantPropNames: PlasmicNavbar__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicNavbar__RenderFunc({
       variants,

@@ -24,13 +24,11 @@ export const PlasmicPageHero__VariantProps = new Array();
 
 export const PlasmicPageHero__ArgProps = new Array();
 
-export const defaultPageHero__Args = {};
-
 function PlasmicPageHero__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultPageHero__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return true ? (
     <p.Stack
       as={"div"}
@@ -101,12 +99,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicPageHero__ArgProps,
-      internalVariantPropNames: PlasmicPageHero__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicPageHero__ArgProps,
+          internalVariantPropNames: PlasmicPageHero__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicPageHero__RenderFunc({
       variants,

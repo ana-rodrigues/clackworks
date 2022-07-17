@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import { CmsRowImage } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: dj_Vc2QmFA/codeComponent
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
+import { CmsRowLink } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: Ds6UdKRHmq/codeComponent
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicArticleCard.module.css"; // plasmic-import: AHLMP-tgYM/css
@@ -28,13 +29,11 @@ export const PlasmicArticleCard__VariantProps = new Array();
 
 export const PlasmicArticleCard__ArgProps = new Array("bgColor", "url");
 
-export const defaultArticleCard__Args = {};
-
 function PlasmicArticleCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultArticleCard__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
     hover_root: isRootHover
@@ -56,7 +55,6 @@ function PlasmicArticleCard__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"/article-detail"}
       platform={"nextjs"}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
@@ -129,22 +127,33 @@ function PlasmicArticleCard__RenderFunc(props) {
                     )}
                   />
                 ) : null}
-                {(triggers.hover_root ? true : false) ? (
-                  <div
-                    data-plasmic-name={"text"}
-                    data-plasmic-override={overrides.text}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text
-                    )}
-                  >
-                    <p.Trans>{"Read more →"}</p.Trans>
-                  </div>
-                ) : null}
               </p.Stack>
             ) : null}
           </p.Stack>
+        ) : null}
+        {true ? (
+          <CmsRowLink
+            data-plasmic-name={"cmsEntryLink"}
+            data-plasmic-override={overrides.cmsEntryLink}
+            className={classNames("__wab_instance", sty.cmsEntryLink)}
+            hrefProp={"href"}
+          >
+            <p.PlasmicLink
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link
+              )}
+              component={Link}
+              href={"/article-detail"}
+              platform={"nextjs"}
+            >
+              <p.Trans>{"Read more →"}</p.Trans>
+            </p.PlasmicLink>
+          </CmsRowLink>
         ) : null}
       </article>
     </p.PlasmicLink>
@@ -160,7 +169,8 @@ const PlasmicDescendants = {
     "img",
     "productInfo",
     "productInfoBottom",
-    "text"
+    "cmsEntryLink",
+    "link"
   ],
 
   article: [
@@ -170,25 +180,32 @@ const PlasmicDescendants = {
     "img",
     "productInfo",
     "productInfoBottom",
-    "text"
+    "cmsEntryLink",
+    "link"
   ],
 
   productTop: ["productTop", "cmsEntryImage", "img"],
   cmsEntryImage: ["cmsEntryImage", "img"],
   img: ["img"],
-  productInfo: ["productInfo", "productInfoBottom", "text"],
-  productInfoBottom: ["productInfoBottom", "text"],
-  text: ["text"]
+  productInfo: ["productInfo", "productInfoBottom"],
+  productInfoBottom: ["productInfoBottom"],
+  cmsEntryLink: ["cmsEntryLink", "link"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicArticleCard__ArgProps,
-      internalVariantPropNames: PlasmicArticleCard__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicArticleCard__ArgProps,
+          internalVariantPropNames: PlasmicArticleCard__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicArticleCard__RenderFunc({
       variants,
@@ -216,7 +233,8 @@ export const PlasmicArticleCard = Object.assign(
     img: makeNodeComponent("img"),
     productInfo: makeNodeComponent("productInfo"),
     productInfoBottom: makeNodeComponent("productInfoBottom"),
-    text: makeNodeComponent("text"),
+    cmsEntryLink: makeNodeComponent("cmsEntryLink"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicArticleCard
     internalVariantProps: PlasmicArticleCard__VariantProps,
     internalArgProps: PlasmicArticleCard__ArgProps

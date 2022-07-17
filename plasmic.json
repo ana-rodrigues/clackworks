@@ -261,6 +261,26 @@
           "id": "dorDtaEXC",
           "name": "ArrowRightIcon",
           "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__ArrowRight.jsx"
+        },
+        {
+          "id": "5K-hZbylu4y8",
+          "name": "Icon29Icon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon29.jsx"
+        },
+        {
+          "id": "QZFAutl9gglq",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon2.jsx"
+        },
+        {
+          "id": "fZWgwzfUaKrh",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon3.jsx"
+        },
+        {
+          "id": "pCH1ztjoOa5c",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/clackwrks/icons/PlasmicIcon__Icon4.jsx"
         }
       ],
       "images": [
@@ -298,6 +318,16 @@
           "id": "W2xDoz7T4",
           "name": "logo.png",
           "filePath": "../public/plasmic/clackwrks/images/logopng.png"
+        },
+        {
+          "id": "zIQyAZKh781x",
+          "name": "image",
+          "filePath": "../public/plasmic/clackwrks/images/image.svg"
+        },
+        {
+          "id": "CBxgpuNoORTS",
+          "name": "image 2",
+          "filePath": "../public/plasmic/clackwrks/images/image2.jpeg"
         }
       ],
       "indirect": false,
@@ -331,8 +361,7 @@
           "name": "ContentfulCredentialsProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-contentful"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -376,8 +405,7 @@
           "name": "CmsQueryRepeater",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -396,8 +424,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -414,6 +441,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.182",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.182/dist/plasmic.schema.json"
+  "cliVersion": "0.1.184",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.184/dist/plasmic.schema.json"
 }

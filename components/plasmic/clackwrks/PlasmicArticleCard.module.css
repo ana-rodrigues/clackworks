@@ -135,17 +135,28 @@
   font-size: var(--token-cEZuuWccf);
   line-height: var(--token-oybP_xLay);
   max-width: 100%;
+  display: flex;
 }
 .root:hover .cmsEntryField__jIxXe:global(.__wab_instance) {
-  display: none;
+  display: flex;
 }
-.text {
+.cmsEntryLink:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+}
+.link {
   color: var(--token-m6T18ReYY);
-  font-family: var(--token-27hF1Rg-3);
-  letter-spacing: -0.25px;
-  font-weight: 300;
-  font-size: var(--token-cEZuuWccf);
-  line-height: var(--token-oybP_xLay);
+  font-family: var(--token-GZcn0Qi5a);
+  font-size: var(--token-2WImiHVlH);
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  height: auto;
   max-width: 800px;
-  padding-right: 0px;
+  min-width: 0;
+  margin: var(--token-GEYkHVTwq);
 }

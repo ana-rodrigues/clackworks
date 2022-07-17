@@ -24,13 +24,11 @@ export const PlasmicArticleTag__VariantProps = new Array();
 
 export const PlasmicArticleTag__ArgProps = new Array("children");
 
-export const defaultArticleTag__Args = {};
-
 function PlasmicArticleTag__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultArticleTag__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"tag"}
@@ -61,12 +59,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicArticleTag__ArgProps,
-      internalVariantPropNames: PlasmicArticleTag__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicArticleTag__ArgProps,
+          internalVariantPropNames: PlasmicArticleTag__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicArticleTag__RenderFunc({
       variants,

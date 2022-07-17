@@ -29,13 +29,11 @@ export const PlasmicArticle__VariantProps = new Array();
 
 export const PlasmicArticle__ArgProps = new Array();
 
-export const defaultArticle__Args = {};
-
 function PlasmicArticle__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultArticle__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <style>{`
@@ -45,7 +43,7 @@ function PlasmicArticle__RenderFunc(props) {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <div
+        <article
           data-plasmic-name={"layout"}
           data-plasmic-override={overrides.layout}
           data-plasmic-root={true}
@@ -58,6 +56,8 @@ function PlasmicArticle__RenderFunc(props) {
             projectcss.plasmic_tokens,
             sty.layout
           )}
+          role={""}
+          title={""}
         >
           <Footer
             data-plasmic-name={"footer"}
@@ -102,7 +102,7 @@ function PlasmicArticle__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__tkRH
+                            sty.text__nthRc
                           )}
                         >
                           <p.Trans>
@@ -126,7 +126,7 @@ function PlasmicArticle__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__iw0Gu
+                            sty.text__vb5GT
                           )}
                         >
                           <p.Trans>{"Loading..."}</p.Trans>
@@ -225,7 +225,7 @@ function PlasmicArticle__RenderFunc(props) {
               </CmsQueryRepeater>
             </p.Stack>
           ) : null}
-        </div>
+        </article>
       </div>
     </React.Fragment>
   );
@@ -272,12 +272,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicArticle__ArgProps,
-      internalVariantPropNames: PlasmicArticle__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicArticle__ArgProps,
+          internalVariantPropNames: PlasmicArticle__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicArticle__RenderFunc({
       variants,

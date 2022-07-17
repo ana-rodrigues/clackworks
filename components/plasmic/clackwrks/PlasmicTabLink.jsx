@@ -25,13 +25,11 @@ export const PlasmicTabLink__VariantProps = new Array();
 
 export const PlasmicTabLink__ArgProps = new Array("children");
 
-export const defaultTabLink__Args = {};
-
 function PlasmicTabLink__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTabLink__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -78,12 +76,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTabLink__ArgProps,
-      internalVariantPropNames: PlasmicTabLink__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTabLink__ArgProps,
+          internalVariantPropNames: PlasmicTabLink__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTabLink__RenderFunc({
       variants,

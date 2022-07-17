@@ -25,13 +25,11 @@ export const PlasmicProductInformation__VariantProps = new Array();
 
 export const PlasmicProductInformation__ArgProps = new Array("children");
 
-export const defaultProductInformation__Args = {};
-
 function PlasmicProductInformation__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultProductInformation__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return true ? (
     <p.Stack
       as={"div"}
@@ -113,12 +111,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicProductInformation__ArgProps,
-      internalVariantPropNames: PlasmicProductInformation__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicProductInformation__ArgProps,
+          internalVariantPropNames: PlasmicProductInformation__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicProductInformation__RenderFunc({
       variants,

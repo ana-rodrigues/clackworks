@@ -43,15 +43,23 @@ export const PlasmicTextInput__ArgProps = new Array(
   "aria-labelledby"
 );
 
-export const defaultTextInput__Args = {
-  placeholder: "Enter something…"
-};
-
 function PlasmicTextInput__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTextInput__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          placeholder: "Enter something…"
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: true
@@ -254,12 +262,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTextInput__ArgProps,
-      internalVariantPropNames: PlasmicTextInput__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTextInput__ArgProps,
+          internalVariantPropNames: PlasmicTextInput__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTextInput__RenderFunc({
       variants,

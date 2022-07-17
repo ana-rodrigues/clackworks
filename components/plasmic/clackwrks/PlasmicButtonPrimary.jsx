@@ -24,13 +24,11 @@ export const PlasmicButtonPrimary__VariantProps = new Array();
 
 export const PlasmicButtonPrimary__ArgProps = new Array("children");
 
-export const defaultButtonPrimary__Args = {};
-
 function PlasmicButtonPrimary__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultButtonPrimary__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <button
       data-plasmic-name={"root"}
@@ -69,12 +67,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicButtonPrimary__ArgProps,
-      internalVariantPropNames: PlasmicButtonPrimary__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicButtonPrimary__ArgProps,
+          internalVariantPropNames: PlasmicButtonPrimary__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicButtonPrimary__RenderFunc({
       variants,

@@ -25,13 +25,11 @@ export const PlasmicTab__VariantProps = new Array();
 
 export const PlasmicTab__ArgProps = new Array();
 
-export const defaultTab__Args = {};
-
 function PlasmicTab__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTab__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"tab"}
@@ -64,12 +62,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTab__ArgProps,
-      internalVariantPropNames: PlasmicTab__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTab__ArgProps,
+          internalVariantPropNames: PlasmicTab__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTab__RenderFunc({
       variants,
