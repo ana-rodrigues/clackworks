@@ -271,6 +271,9 @@ function PlasmicHome__RenderFunc(props) {
                           <ArticleCard
                             data-plasmic-name={"articleCard"}
                             data-plasmic-override={overrides.articleCard}
+                            articleLink={
+                              $ctx.plasmicCmsArticleItem.data.articleSlug
+                            }
                             className={classNames(
                               "__wab_instance",
                               sty.articleCard

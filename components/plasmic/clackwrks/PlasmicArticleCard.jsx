@@ -20,19 +20,35 @@ import {
 } from "@plasmicapp/react-web";
 import { CmsRowImage } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: dj_Vc2QmFA/codeComponent
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: w6HdOz-Pcn/codeComponent
-import { CmsRowLink } from "@plasmicpkgs/plasmic-cms"; // plasmic-import: Ds6UdKRHmq/codeComponent
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../clackworks/plasmic_clackworks.module.css"; // plasmic-import: ggKD3RisT9Ubzud33WNkiG/projectcss
 import sty from "./PlasmicArticleCard.module.css"; // plasmic-import: AHLMP-tgYM/css
 
 export const PlasmicArticleCard__VariantProps = new Array();
 
-export const PlasmicArticleCard__ArgProps = new Array("bgColor", "url");
+export const PlasmicArticleCard__ArgProps = new Array(
+  "bgColor",
+  "url",
+  "articleLink"
+);
 
 function PlasmicArticleCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          url: "/article-detail",
+          articleLink: "/article-detail"
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
   const $props = args;
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
@@ -40,28 +56,28 @@ function PlasmicArticleCard__RenderFunc(props) {
   };
 
   return (
-    <p.PlasmicLink
+    <article
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
-        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root
       )}
-      component={Link}
-      platform={"nextjs"}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
-      <article
-        data-plasmic-name={"article"}
-        data-plasmic-override={overrides.article}
-        className={classNames(projectcss.all, sty.article)}
+      <p.PlasmicLink
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
+        component={Link}
+        href={args.articleLink}
+        platform={"nextjs"}
       >
         {true ? (
           <div
@@ -81,7 +97,7 @@ function PlasmicArticleCard__RenderFunc(props) {
                 data-plasmic-override={overrides.img}
                 alt={""}
                 className={classNames(sty.img)}
-                displayHeight={"100%"}
+                displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
@@ -131,66 +147,36 @@ function PlasmicArticleCard__RenderFunc(props) {
             ) : null}
           </p.Stack>
         ) : null}
-        {true ? (
-          <CmsRowLink
-            data-plasmic-name={"cmsEntryLink"}
-            data-plasmic-override={overrides.cmsEntryLink}
-            className={classNames("__wab_instance", sty.cmsEntryLink)}
-            hrefProp={"href"}
-          >
-            <p.PlasmicLink
-              data-plasmic-name={"link"}
-              data-plasmic-override={overrides.link}
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link
-              )}
-              component={Link}
-              href={"/article-detail"}
-              platform={"nextjs"}
-            >
-              <p.Trans>{"Read more →"}</p.Trans>
-            </p.PlasmicLink>
-          </CmsRowLink>
-        ) : null}
-      </article>
-    </p.PlasmicLink>
+      </p.PlasmicLink>
+    </article>
   );
 }
 
 const PlasmicDescendants = {
   root: [
     "root",
-    "article",
+    "link",
     "productTop",
     "cmsEntryImage",
     "img",
     "productInfo",
-    "productInfoBottom",
-    "cmsEntryLink",
-    "link"
+    "productInfoBottom"
   ],
 
-  article: [
-    "article",
+  link: [
+    "link",
     "productTop",
     "cmsEntryImage",
     "img",
     "productInfo",
-    "productInfoBottom",
-    "cmsEntryLink",
-    "link"
+    "productInfoBottom"
   ],
 
   productTop: ["productTop", "cmsEntryImage", "img"],
   cmsEntryImage: ["cmsEntryImage", "img"],
   img: ["img"],
   productInfo: ["productInfo", "productInfoBottom"],
-  productInfoBottom: ["productInfoBottom"],
-  cmsEntryLink: ["cmsEntryLink", "link"],
-  link: ["link"]
+  productInfoBottom: ["productInfoBottom"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -227,14 +213,12 @@ export const PlasmicArticleCard = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    article: makeNodeComponent("article"),
+    link: makeNodeComponent("link"),
     productTop: makeNodeComponent("productTop"),
     cmsEntryImage: makeNodeComponent("cmsEntryImage"),
     img: makeNodeComponent("img"),
     productInfo: makeNodeComponent("productInfo"),
     productInfoBottom: makeNodeComponent("productInfoBottom"),
-    cmsEntryLink: makeNodeComponent("cmsEntryLink"),
-    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicArticleCard
     internalVariantProps: PlasmicArticleCard__VariantProps,
     internalArgProps: PlasmicArticleCard__ArgProps

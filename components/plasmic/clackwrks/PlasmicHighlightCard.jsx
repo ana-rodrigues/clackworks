@@ -55,7 +55,9 @@ function PlasmicHighlightCard__RenderFunc(props) {
       )}
       component={Link}
       href={
-        triggers.hover_root ? "mailto: a.rodrigues.email" : "/article-detail"
+        triggers.hover_root
+          ? "mailto: a.rodrigues.email"
+          : $ctx.plasmicCmsArticleItem.data.articleSlug
       }
       platform={"nextjs"}
       title={""}
